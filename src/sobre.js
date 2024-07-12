@@ -178,7 +178,6 @@ function renderizarOds() {
         margin-bottom: 1vw;
         background-color:white;
         height: 10vw; 
-        top:0px;
         border-radius: 2rem;"
       /></center>
       <p id="detalhes" style="font-size: 1.2vw; 
