@@ -38,6 +38,67 @@
   margin-top: 0.5rem;
 }
 
+
+#contato-container{
+  display: flex; 
+  flex-wrap: wrap;
+  padding: 2.5rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.card-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-top img {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 1rem;
+  margin-left: 1vw;
+  margin-top: 1vw;
+}
+
+.card-top .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2vw;
+}
+
+.card-top .info span {
+  font-size: 1vw;
+  margin-bottom: 0.5vw;
+}
+
+.card-top button {
+  background-color: #F5F5DC;
+  height: 3vw;
+  width: 7vw;
+  padding: 1vw;
+  border-radius: 1rem;
+  margin-top: 1vw;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5vw;
+}
+
+.card-bottom h4 {
+  font-size: 1.3vw;
+  margin: 0;
+}
+
+.card-bottom img {
+  width: 10vw;
+  height: 10vw;
+  margin-left: 1vw;
+}
+
 .welcome{
     margin-left: 5vw;
     margin-top: 5vw     ;

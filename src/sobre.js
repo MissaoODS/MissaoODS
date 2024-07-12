@@ -192,15 +192,19 @@ function renderizarOds() {
 
     const cartoes = document.querySelectorAll('#ods-container > div');
     cartoes.forEach((cartao) => {
-        cartao.addEventListener('mouseover', () => {
-            cartao.style.width = "28vw";
-            cartao.style.height = "28vw";
-            cartao.querySelector('#detalhes').style.display = 'block';
-        });
-        cartao.addEventListener('mouseout', () => {
-            cartao.style.width = "13vw";
-            cartao.style.height = "13vw";
-            cartao.querySelector('#detalhes').style.display = 'none';
+        let detalhesVisivel = false;
+        cartao.addEventListener('click', () => {
+            if (!detalhesVisivel) {
+                cartao.style.width = "28vw";
+                cartao.style.height = "28vw";
+                cartao.querySelector('#detalhes').style.display = 'block';
+                detalhesVisivel = true;
+            } else {
+                cartao.style.width = "13vw";
+                cartao.style.height = "13vw";
+                cartao.querySelector('#detalhes').style.display = 'none';
+                detalhesVisivel = false;
+            }
         });
     });
 }
@@ -210,8 +214,11 @@ const games = [
         id:1,
         imagem:'./imgs/caixaR.png',
         nome:"Missão 2030: Desafio dos Ods",
-        description:`descrição do jogo aqui`,
+        description:`Missão 2030: Desafios dos ODS é um jogo de tabuleiro onde 1 a 4 jogadores jogam em turnos obtendo pontuação
+        respondendo corretamente as perguntas sobre o tema da carta, além de sofrer com consequências aleatórias que podem ser 
+        positivas ou negativas.`,
     },
+    
 ]
 
 
@@ -226,7 +233,7 @@ function renderizarGames(){
         padding: 1vw;
         margin-right: 2vw;
         width: 35vw;
-        height: 13vw;
+        height: 15vw;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -239,7 +246,7 @@ function renderizarGames(){
         />
         <div style="display: flex; flex-direction: column; justify-content: center;">
           <h3 id="nomeJogo" style="font-size: 1.3vw; color: #333; margin-bottom: 0.5vw;">${jogodR.nome}</h3>
-          <p id="descricaoJogo" style="font-size: 1.2vw; color: #666; margin-top: 0;">${jogodR.description}</p>
+          <p id="descricaoJogo" style="font-size: 1vw; color: #666; margin-top: 0;">${jogodR.description}</p>
           <button style="background-color: #4CAF50; color: #fff; padding: 0.5vw 1vw; border: none;margin-top:1vw; border-radius: 0.5rem; cursor: pointer;" onclick="window.location.href='https://missaoods.itch.io/misso-2030-desafios-dos-ods'">Conheça o jogo</button>
         </div>
       </div>`
