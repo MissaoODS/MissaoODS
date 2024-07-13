@@ -4,9 +4,45 @@ const equipe = [
         foto:'./imgs/img1.png',
         nome:"Caio Cesar Camargo",
         idade:24,
-        cargo:"programador",
+        cargo:"Desenvolvedor Web e Jogos",
         numero:"5513988639835",
         qr:'./imgs/qrCaio.png',
+    },
+    {
+        id:2,
+        foto:'./imgs/img1.png',
+        nome:"Cendy",
+        idade:24,
+        cargo:"Repórter",
+        numero:"5513991740565",
+        qr:'./imgs/qrCendy.png',
+    },
+    {
+        id:3,
+        foto:'./imgs/img1.png',
+        nome:"Gregory Valentim",
+        idade:26,
+        cargo:"Desenvolvedor de Jogos",
+        numero:"5513991267227",
+        qr:'./imgs/qrGrego.png',
+    },
+    {
+        id:4,
+        foto:'./imgs/img1.png',
+        nome:"Laura Cecatto",
+        idade:24,
+        cargo:"Médica Veterinária",
+        numero:"5513996857360",
+        qr:'./imgs/qrLaura.png',
+    },
+    {
+        id:5,
+        foto:'./imgs/img1.png',
+        nome:"Luiz Guilherme",
+        idade:24,
+        cargo:"Repórter",
+        numero:"5513991761083",
+        qr:'./imgs/qrLuiz.png',
     },
 ]
 
@@ -44,7 +80,7 @@ function renderizarEquipe(){
                 <button style="background-color: #4CAF50; color: #fff; padding: 0.5vw 1vw; border: none; border-radius: 0.5rem; cursor: pointer;margin-top:2vw;margin-right:4vw;">Link</button>
               </a>
               <h2 style="margin-top:2vw;margin-right:4vw;">ou</h2>
-              <img id="imgEquipe" src="${equipeR.qr}" alt="Equipe" style="width: 10vw; height: 10vw; border-radius: 1rem; margin-left: 1vw; margin-top: -1vw;"/>
+              <img id="imgEquipe" src="${equipeR.qr}" alt="Equipe" style="width: 15vw; height: 15vw; border-radius: 1rem; margin-left: 1vw; margin-top: -3vw;"/>
             </div>
           </div>
         </div>

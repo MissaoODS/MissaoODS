@@ -216,8 +216,15 @@ const games = [
         description:`Missão 2030: Desafios dos ODS é um jogo de tabuleiro onde 1 a 4 jogadores jogam em turnos obtendo pontuação
         respondendo corretamente as perguntas sobre o tema da carta, além de sofrer com consequências aleatórias que podem ser 
         positivas ou negativas.`,
+        linkgame:'https://missaoods.itch.io/misso-2030-desafios-dos-ods',
     },
-    
+    {
+        id:2,
+        imagem:'./imgs/santosC (1).png',
+        nome:"Santos City Game",
+        description:`Vamos te levar para os melhores lugares da cidade, sem sair de casa! Game caiçara, para conhecer e se apaixonar por SANTOS. Bora jogar? `,
+        linkgame:'https://www.instagram.com/santoscitygame?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
+    },
 ]
 
 
@@ -241,13 +248,13 @@ function renderizarGames(){
         <img id="imgJogo"
           src="${jogodR.imagem}"
           alt="jogo"
-          style="width: 20vw; height: 20vw; border-radius: 1rem; margin-left:-5vw; margin-top:-3vw;"
+          style="width: 15vw; height: 15vw; border-radius: 1rem; margin-top:-3vw;"
         />
         <div style="display: flex; flex-direction: column; justify-content: center;">
           <h3 id="nomeJogo" style="font-size: 1.3vw; color: #333; margin-bottom: 0.5vw;">${jogodR.nome}</h3>
           <p id="descricaoJogo" style="font-size: 1vw; color: #666; margin-top: 0;">${jogodR.description}</p>
-          <button style="background-color: #4CAF50; color: #fff; padding: 0.5vw 1vw; border: none;margin-top:1vw; border-radius: 0.5rem; cursor: pointer;" onclick="window.location.href='https://missaoods.itch.io/misso-2030-desafios-dos-ods'">Conheça o jogo</button>
-        </div>
+          <button style="background-color: #4CAF50; color: #fff; padding: 0.5vw 1vw; border: none; margin-top: 1vw; border-radius: 0.5rem; cursor: pointer;" onclick="window.location.href='${jogodR.linkgame}'">Conheça o jogo</button>
+          </div>
       </div>`
       cartoesJogos += cartaoJogos;
     }
