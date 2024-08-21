@@ -220,9 +220,12 @@ const games = [
     },
     {
         id:2,
-        imagem:'./imgs/santosC (1).png',
+        imagem:'./imgs/SANTOScITY.jpeg',
         nome:"Santos City Game",
-        description:`Vamos te levar para os melhores lugares da cidade, sem sair de casa! Game caiçara, para conhecer e se apaixonar por SANTOS. Bora jogar? `,
+        description:`Santos City Game é um jogo de tabuleiro imersivo que combina realidade aumentada com os encantos históricos e 
+        turísticos de Santos. Projetado para promover a cultura e o patrimônio da cidade, o jogo oferece uma experiência educativa
+        e divertida, ideal para jovens de 12 a 18 anos, turistas e escolas. Conheça pelas redes sociais, ele convida os
+        jogadores a explorar Santos de forma interativa e envolvente.`,
         linkgame:'https://www.instagram.com/santoscitygame?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
     },
 ]
@@ -238,8 +241,8 @@ function renderizarGames(){
         border-radius: 1rem;
         padding: 1vw;
         margin-right: 2vw;
-        width: 35vw;
-        height: 15vw;
+        width: 37vw;
+        height: 17vw;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -248,9 +251,9 @@ function renderizarGames(){
         <img id="imgJogo"
           src="${jogodR.imagem}"
           alt="jogo"
-          style="width: 15vw; height: 15vw; border-radius: 1rem; margin-top:-3vw;"
+          style="width: 13vw; height: 13vw; border-radius: 1rem; margin-top:-3vw;"
         />
-        <div style="display: flex; flex-direction: column; justify-content: center;">
+        <div style="display: flex; flex-direction: column; justify-content: center;margin-left:2vw;">
           <h3 id="nomeJogo" style="font-size: 1.3vw; color: #333; margin-bottom: 0.5vw;">${jogodR.nome}</h3>
           <p id="descricaoJogo" style="font-size: 1vw; color: #666; margin-top: 0;">${jogodR.description}</p>
           <button style="background-color: #4CAF50; color: #fff; padding: 0.5vw 1vw; border: none; margin-top: 1vw; border-radius: 0.5rem; cursor: pointer;" onclick="window.location.href='${jogodR.linkgame}'">Conheça o jogo</button>

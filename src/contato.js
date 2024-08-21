@@ -6,6 +6,7 @@ const equipe = [
         idade:24,
         cargo:"Desenvolvedor Web e Jogos",
         numero:"5513988639835",
+        email:"caiocesarpaula29@gmail.com",
         qr:'./imgs/qrCaio.png',
     },
     {
@@ -15,15 +16,17 @@ const equipe = [
         idade:24,
         cargo:"Repórter",
         numero:"5513991740565",
+        email:"",
         qr:'./imgs/qrCendy.png',
     },
     {
         id:3,
-        foto:'./imgs/img1.png',
+        foto:'./imgs/gregory.jpeg',
         nome:"Gregory Valentim",
         idade:26,
         cargo:"Desenvolvedor de Jogos",
         numero:"5513991267227",
+        email:"gregory_valentim@hotmail.com",
         qr:'./imgs/qrGrego.png',
     },
     {
@@ -33,6 +36,7 @@ const equipe = [
         idade:24,
         cargo:"Médica Veterinária",
         numero:"5513996857360",
+        email:"",
         qr:'./imgs/qrLaura.png',
     },
     {
@@ -42,6 +46,7 @@ const equipe = [
         idade:24,
         cargo:"Repórter",
         numero:"5513991761083",
+        email:"",
         qr:'./imgs/qrLuiz.png',
     },
 ]
@@ -66,11 +71,12 @@ function renderizarEquipe(){
           margin-top: 0.5vw;
         ">
           <div class="card-top">
-            <img id="imgEquipe" src="${equipeR.foto}" alt="Equipe" style="width: 10vw; height: 10vw; border-radius: 1rem; margin-left: 1vw; margin-top: 1vw;">
+            <img id="imgEquipe" src="${equipeR.foto}" alt="Equipe" style="width: 12vw; height: 10vw; border-radius: 8rem; margin-left: 1vw; margin-top: 1vw;">
             <div style="display: flex; flex-direction: column; justify-content: center; margin-left: 2vw;">
               <h3 id="nomeEquipe" style="font-size: 1.3vw; color: #333; margin-bottom: 0.5vw;">${equipeR.nome}</h3>
               <p id="idadeEquipe" style="font-size: 1vw; color: #666; margin-top: 0;">${equipeR.idade} anos</p>
               <p id="cargoEquipe" style="font-size: 1vw; color: #666; margin-top: 0;">${equipeR.cargo}</p>
+              <p id="cargoEquipe" style="font-size: 1vw; color: #666; margin-top: 0;">${equipeR.email}</p>
               <button id="contatar-btn" style="background-color: #F5F5DC; height:3vw; width:7vw; padding: 1vw; border-radius: 1rem; margin-top: 1vw;cursor:pointer;">Contatar</button>
             </div>
           </div>
